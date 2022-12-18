@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #111;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+}
+/* 以上、リセットCSS */
+
+.inner{
+    max-width: 380px;
+}
+.information{
+    height: 30px;
+    background-color: rgb(30, 175, 247);
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    padding-left: 5px;
+    line-height: 30px;
+}
+.menu-arrow img{
+   transform:rotate(90deg);
+   vertical-align: middle;
+   padding-top: 5px;
+}
+.header{
+    height: 60px;
+    display: flex;
+}
+.logo{
+    width: 60px;
+}
+.logo img{
+    width: 100%;
+}
+.header-right{
+    width: 315px;
+    height: 60px;
+}
+.top{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(146, 175, 0);
+    font-size: 16px;
+    font-weight: bold;
+}
+.ippaku{
+    font-size: 12px;
+    font-weight: normal;
+}
+.bottom{
+    display: flex;
+    background-color: rgb(30, 175, 247);
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+.bottom-left{
+    width: 50%;
+    border-right: solid 1px white;
+}
+.bottom-right{
+    width: 50%;
+}
+.main-top{
+    height: 70px;
+    line-height: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.main-menu-top{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(233, 234, 235);
+    border-top: solid 0.5px rgb(142, 139, 139);
+    font-size: 12px;
+}
+.main-menu-top a{
+    color: rgb(30, 175, 247);
+}
+.main-menu-bottom{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(233, 234, 235);
+    border-top: solid 0.5px rgb(142, 139, 139);
+    font-size: 12px;
+}
+.main-menu-bottom a{
+    color: rgb(30, 175, 247);
+}
+.home{
+    border-bottom: solid 2px rgb(1, 6, 70);
+}
+.home,.access,.plan,.stay,.dine{
+    width: 20%;
+}
+.facility,.meeting{
+    width: 50%;
+}
+.main-pic{
+    width: 100%;
+    position: relative;
+}
+.main-pic img{
+    width: 100%;
+}
+.img-text{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(26, 27, 27);
+    opacity: 0.6;
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    padding-left: 3px;
+}
+.sesoko-title{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.sesoko-text{
+    font-size: 10px;
+}
+.pictures{
+    height: 55px;
+}
+.pic-btn{
+    width: 95%;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #a1a0a0 50%, #939292 50%);
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    color: white; 
+    position: relative;
+    display: flex;
+}
+.icon{
+    width: 15%;
+}
+.icon img{
+    width: 50%;
+    height: 20px;
+    margin-top: 5px;
+}
+.pic-text{
+    width: 70%;
+}
+.arrow-right{
+    width: 15%;
+    margin-top: 4px;
+}
+.arrow-right img{
+    padding-left: 20px;
+}
+.pic-btn a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.text-area{
+    padding: 0 4px;
+}
+.text-head{
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(30, 175, 247);
+    margin-bottom: 30px;
+}
+.text-main{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.price-reserve{
+    height: 40px;
+    display: flex;
+    margin-bottom: 15px;
+}
+.price-info{
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 5px;
+    color: rgb(146, 175, 0);
+    font-size: 16px;
+    font-weight: bold;
+}
+.reserve-btn{
+    width: 48%;
+    height: 35px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgb(117, 205, 249) 50%, rgb(30, 175, 247) 50%);
+    border-radius: 3px;
+    line-height: 35px;
+    font-size: 12px;
+    color: white; 
+    position: relative;
+    display: flex;
+}
+.reserve-link{
+    width: 80%;
+    text-align: center;
+    padding-left: 30px;
+}
+.reserve-btn a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.hotel-info{
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(233, 234, 235);
+    margin-bottom: 25px;
+}
+.info-item{
+    height: 45px;
+    width: 50%;
+    display: flex;
+}
+.info-item-img{
+    width: 30%;
+    height: 90%;
+    margin-top: 8px;
+}
+.info-item-img img{
+    padding-left: 10px;
+}
+.info-item-text{
+    width: 70%;
+    font-size: 9px;
+    line-height: 45px;
+}
+.recently{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    height: 45px;
+    line-height: 45px;
+    background-color: rgb(14, 168, 245);
+    margin-bottom: 40px;
+}
+.policy-info{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 0.5px #a1a0a0;
+    margin-bottom: 30px;
+}
+.policy-info-item{
+    height: 20px;
+    line-height: 20px;
+    width: 50%;
+    padding-left: 10px;
+}
+.policy-info-item a{
+    font-size: 5px;
+}
+.sns-list{
+    height: 60px;
+    display: flex;
+    margin: 0 auto;
+    border-top:  solid 0.5px #a1a0a0;
+    border-bottom:  solid 0.5px #a1a0a0;
+    justify-content: center;
+    align-items: center;
+}
+.sns{
+    width: 55px;
+    height: 55px;
+    padding: 0 5px;
+}
+.sns img{
+    padding-top: 5px;
+    width: 100%;
+}
+.small img{
+    padding-top: 12px;
+    width: 100%;
+}
+footer{
+    text-align: center;
+    font-size: 5px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
