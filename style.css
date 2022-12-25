@@ -26,6 +26,10 @@ body{
     background-color: rgb(30, 175, 247);
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
 }
 .text{
     font-size: 10px;
@@ -42,6 +46,11 @@ body{
 .header{
     height: 60px;
     display: flex;
+    width: 100%;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 100;
 }
 .logo{
     width: 60px;
@@ -60,6 +69,7 @@ body{
     color: rgb(146, 175, 0);
     font-size: 16px;
     font-weight: bold;
+    background-color: white;
 }
 .ippaku{
     font-size: 12px;
@@ -80,6 +90,9 @@ body{
 }
 .bottom-right{
     width: 50%;
+}
+.main{
+    padding-top: 90px;
 }
 .main-top{
     height: 70px;
