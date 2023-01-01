@@ -23,7 +23,7 @@ body{
 }
 .information{
     height: 30px;
-    background-color: rgb(30, 175, 247);
+    background-color: rgb(249, 198, 67);
     display: flex;
     justify-content: space-between;
     max-width: 380px;
@@ -49,7 +49,7 @@ body{
 /* ハンバーガーここから */
 .infromation-open{
     height: 450px;
-    background-color: rgb(30, 175, 247);
+    background-color: rgb(249, 198, 67);
     max-width: 380px;
     width: 100%;
     position: fixed;
@@ -101,6 +101,7 @@ body{
 }
 .logo{
     width: 60px;
+    background-color: rgb(247, 231, 192);
 }
 .logo img{
     width: 100%;
@@ -113,18 +114,15 @@ body{
     height: 30px;
     line-height: 30px;
     text-align: center;
-    color: rgb(146, 175, 0);
+    color: #f78159;
     font-size: 16px;
     font-weight: bold;
     background-color: white;
 }
-.ippaku{
-    font-size: 12px;
-    font-weight: normal;
-}
+
 .bottom{
     display: flex;
-    background-color: rgb(30, 175, 247);
+    background-color: rgb(249, 198, 67);
     height: 30px;
     line-height: 30px;
     color: white;
@@ -134,19 +132,19 @@ body{
 .bottom-left{
     width: 50%;
     border-right: solid 1px white;
+    font-weight: bold;
 }
 .bottom-right{
     width: 50%;
+    font-weight: bold;
 }
 .main{
     padding-top: 90px;
 }
 .main-top{
-    height: 70px;
-    line-height: 70px;
-    font-size: 16px;
-    font-weight: bold;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .main-menu-top{
     display: flex;
@@ -156,10 +154,10 @@ body{
     text-align: center;
     background-color: rgb(233, 234, 235);
     border-top: solid 0.5px rgb(142, 139, 139);
-    font-size: 12px;
 }
 .main-menu-top a{
-    color: rgb(30, 175, 247);
+    color: #f78159;
+    font-family: times;
 }
 .main-menu-bottom{
     display: flex;
@@ -169,27 +167,57 @@ body{
     text-align: center;
     background-color: rgb(233, 234, 235);
     border-top: solid 0.5px rgb(142, 139, 139);
-    font-size: 12px;
 }
 .main-menu-bottom a{
-    color: rgb(30, 175, 247);
+    color: #f78159;
+    font-family: times;
 }
 .home{
     border-bottom: solid 2px rgb(1, 6, 70);
 }
-.home,.access,.plan,.stay,.dine{
+.home,.studio,.plan{
     width: 20%;
 }
-.facility,.meeting{
+.instructor,.contact{
     width: 50%;
 }
 .main-pic{
     width: 100%;
+    height: 250px;
     position: relative;
 }
 .main-pic img{
     width: 100%;
 }
+.top-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+	opacity: 0;
+	animation: change-img-anim 15s infinite;
+}
+.top-image:nth-of-type(1) {
+    /* animation: change-img-anim-first 5s infinite; */
+    animation-delay: 0s;
+}
+.top-image:nth-of-type(2) {
+    animation-delay: 5s;
+}
+.top-image:nth-of-type(3) {
+    animation-delay: 10s;
+}
+@keyframes change-img-anim-first {
+    0%{ opacity: 1;}
+    20%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+@keyframes change-img-anim {
+    0%{ opacity: 0;}
+    20%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+
+
 .img-text{
     width: 100%;
     height: 55px;
@@ -200,29 +228,16 @@ body{
     color: white;
     padding-left: 3px;
 }
-.sesoko-title{
+.yoga-title{
     font-size: 12px;
     font-weight: bold;
     line-height: 30px;
 }
-.sesoko-text{
+.yoga-text{
     font-size: 10px;
 }
 .pictures{
     height: 55px;
-}
-.pic-btn{
-    width: 95%;
-    margin: 0 auto;
-    background: linear-gradient(180deg, #a1a0a0 50%, #939292 50%);
-    border-radius: 3px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 12px;
-    text-align: center;
-    color: white; 
-    position: relative;
-    display: flex;
 }
 .icon{
     width: 15%;
@@ -242,46 +257,20 @@ body{
 .arrow-right img{
     padding-left: 20px;
 }
-.pic-btn a{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
 .text-area{
     padding: 0 4px;
 }
 .text-head{
     font-size: 19px;
     font-weight: bold;
-    color: rgb(30, 175, 247);
-    margin-bottom: 30px;
-}
-.text-main{
-    font-size: 12px;
+    color: #f78159;
     margin-bottom: 10px;
 }
-.price-reserve{
-    height: 40px;
-    display: flex;
-    margin-bottom: 15px;
-}
-.price-info{
-    width: 50%;
-    height: 40px;
-    line-height: 40px;
-    text-align: left;
-    padding-left: 5px;
-    color: rgb(146, 175, 0);
-    font-size: 16px;
-    font-weight: bold;
-}
-.reserve-btn{
-    width: 48%;
-    height: 35px;
+.link-btn{
+    width: 95%;
+    height: 30px;
     margin: 0 auto;
-    background: linear-gradient(180deg, rgb(117, 205, 249) 50%, rgb(30, 175, 247) 50%);
+    background: linear-gradient(180deg, #a1a0a0 50%, #939292 50%);
     border-radius: 3px;
     line-height: 35px;
     font-size: 12px;
@@ -289,59 +278,152 @@ body{
     position: relative;
     display: flex;
 }
-.reserve-link{
-    width: 80%;
+.link-text{
+    width: 95%;
+    line-height: 30px;
     text-align: center;
     padding-left: 30px;
 }
-.reserve-btn a{
+.link-btn a{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
 }
-.hotel-info{
-    width: 97%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(233, 234, 235);
-    margin-bottom: 25px;
-}
-.info-item{
-    height: 45px;
-    width: 50%;
-    display: flex;
-}
-.info-item-img{
-    width: 30%;
-    height: 90%;
-    margin-top: 8px;
-}
-.info-item-img img{
-    padding-left: 10px;
-}
-.info-item-text{
-    width: 70%;
-    font-size: 9px;
-    line-height: 45px;
-}
-.recently{
+.title-set{
+    width: 100%;
+    font-size: 25px;
     text-align: center;
-    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
     font-weight: bold;
+    color: #5b5858;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: times;
+    position: relative;
+}
+.title-set::before {
+    position: absolute;
+    border-bottom: 3px solid #f78159;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    content: '';
+}
+.studio-box{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.studio-info{
+    width: 45%;
+    margin-bottom: 20px;
+}
+.studio-info-img{
+    background-color: black;
+    position: relative;
+    height: 120px;
+}
+.studio-info img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+.studio-place{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    line-height: 140px;
     color: white;
-    height: 45px;
-    line-height: 45px;
-    background-color: rgb(14, 168, 245);
-    margin-bottom: 40px;
+    text-align: center;
+    font-family: Times;
+}
+.price-table-area{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.price-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.price-table th,.price-table td{
+    border: 1px solid #f78159;
+    text-align: center;
+    font-family: times;
+    height: 30px;
+    line-height: 30px;
+}
+.price-table th{
+    background-color:#f78159;
+    color: white;
+}
+.price-table th:first-child{
+    border-right: 1px solid white;
+}
+.instructor-pic{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+.instructor-pic img{
+    width: 100%;
+}
+.instructor-text{
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    padding-left: 3px;
+}
+.instructor-text p{
+    font-family: times;
+}
+.instructor-info{
+    width: 90%;
+    margin: 20px auto;
+    font-family: times;
+}
+.contact-btn{
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #f69c7e 50%, #f78159 50%);
+    border-radius: 20px;
+    line-height: 35px;
+    font-size: 12px;
+    color: white; 
+    position: relative;
+    display: flex;
+}
+.contact-text{
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-btn a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 .policy-info{
     display: flex;
     flex-wrap: wrap;
     border-top: solid 0.5px #a1a0a0;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .policy-info-item{
     height: 20px;
@@ -350,7 +432,7 @@ body{
     padding-left: 10px;
 }
 .policy-info-item a{
-    font-size: 5px;
+    font-size: 8px;
 }
 .sns-list{
     height: 60px;
@@ -360,6 +442,7 @@ body{
     border-bottom:  solid 0.5px #a1a0a0;
     justify-content: center;
     align-items: center;
+    height: 90px;
 }
 .sns{
     width: 55px;
