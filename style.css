@@ -206,11 +206,11 @@ body{
 .top-image:nth-of-type(3) {
     animation-delay: 10s;
 }
-@keyframes change-img-anim-first {
+/* @keyframes change-img-anim-first {
     0%{ opacity: 1;}
     20%{ opacity: 1;}
     100%{ opacity: 0;}
-}
+} */
 @keyframes change-img-anim {
     0%{ opacity: 0;}
     20%{ opacity: 1;}
@@ -304,15 +304,7 @@ body{
     font-family: times;
     position: relative;
 }
-.title-set::before {
-    position: absolute;
-    border-bottom: 3px solid #f78159;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    content: '';
-}
+ 
 .studio-box{
     display: flex;
     width: 95%;
